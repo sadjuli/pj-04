@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&family=Yeseva+One&display=swap" rel="stylesheet">
+    <script src="./js/slider.js"></script>
+</head>
+<body>
+    <main>
+        <section class="projects">
+            <div class="wrapper">
+                <div class="flex projects__cols">
+                    <div class="projects__col1">
+                        <div class="h2">Completed<br />projects</div>
+                        <div class="projects__text">
+                            Only a small part of the work performed by our company is presented<br class="mobile-hide" />on the site. For 14 years on in the construction<br />
+                            market we have made happy more than 1000 families
+                        </div>
+                        
+                        <div class="flex project__list">
+                            <div class="project__list-item">
+                                <div class="project__list-title">City:</div>
+                                <div class="project__list-subtitle">Rostov-on-Don<br />LCD admiral</div>
+                            </div>
+                            <div class="project__list-item">
+                                <div class="project__list-title">Apartment area:</div>
+                                <div class="project__list-subtitle">81 m2</div>
+                            </div>
+                            <div class="project__list-item">
+                                <div class="project__list-title">Repair time:</div>
+                                <div class="project__list-subtitle">3.5 months</div>
+                            </div>
+                            <div class="project__list-item">
+                                <div class="project__list-title">Repair Cost:</div>
+                                <div class="project__list-subtitle">Upon request</div>
+                            </div>
+                        </div>
+                        <div class="projects__nav">
+                            <div class="projects__nav-prev" onclick="setSliderPrev()"></div>
+                            <div id="slider_pins" class="projects__nav-pins">
+                                <span class="projects__nav-pin projects__nav-pin--active" onclick="setSliderImage(0)"></span>
+                                <span class="projects__nav-pin" onclick="setSliderImage(1)"></span>
+                                <span class="projects__nav-pin" onclick="setSliderImage(2)"></span>
+                            </div>
+                            <div class="projects__nav-next" onclick="setSliderNext()"></div>
+                        </div>
+                    </div>
+                    <div class="projects__col2">
+                        <div id="slider_tabs" class="projects__tabs">
+                            <div class="projects__tab projects__tab--active" onclick="setSliderImage(0)">Rostov-on-Don, Admiral</div>
+                            <div class="projects__tab" onclick="setSliderImage(1)">Sochi Thieves</div>
+                            <div class="projects__tab" onclick="setSliderImage(2)">Rostov-on-Don Patriotic</div>
+                        </div>
+                        <div class="projects__image">
+                            <img id="slider_image" src="./images/jpeg/picture_one.jpg">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
